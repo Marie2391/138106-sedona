@@ -158,11 +158,7 @@
                         </li> 
                     </ul>   
                 </div>
-            </div>
-        </main>
 
-        <footer class="main-footer">
-            <div class="container">
                 <div class="search">
                     <p>
                         Заинтересовались?
@@ -178,32 +174,50 @@
                 <div class="form">    
                     <form method="get">
                         <label for="arrival-date"> Дата заезда: </label>
-                        <input type="date" name="arrival-date" id="arrival-date">
+                        <input type="text" name="arrival-date" id="arrival-date" value="27 апреля 2017">
+                        <button class="arrive-calendar">
+                            <img src="http://placehold.it/50x50" alt=""> 
+                        </button>
 
                         <label for="departure-date"> Дата выезда: </label>
-                        <input type="date" name="departure-date" id="departure-date">
+                        <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
+                        <button class="departure-calendar">
+                            <img src="http://placehold.it/50x50" alt=""> 
+                        </button>
+
+                        <label for="adult"> Взрослые: </label>
+                        <button class="minus"> - </button>
+                        <input type="text" name="adult" id="adult" value="2">
+                        <button class="plus"> + </button>
+
+                        <label for="children"> Дети: </label>
+                        <button class="minus"> - </button>
+                        <input type="text" name="children" id="children" value="0">
+                        <button class="plus"> + </button>
 
                         <a class="btn" href="#"> Найти </a>
                     </form>
                 </div>
+            </div>
+        </main>
 
-                <div class="footer-contacts">
-                    <section class="visit-sedona">
-                        #visitsedona
-                    </section>
+        <footer class="main-footer">
+            <div class="container">
+                <section class="visit-sedona">
+                    #visitsedona
+                </section>
 
-                    <section class="footer-social">
-                        <a class="social-btn social-btn-twitter" href="#"> Твиттер </a>
-                        <a class="social-btn social-btn-fb" href="#"> Фейсбук </a>
-                        <a class="social-btn social-btn-utube" href="#"> Ютуб </a>
-                    </section>
+                <section class="footer-social">
+                    <a class="social-btn social-btn-twitter" href="#"> Твиттер </a>
+                    <a class="social-btn social-btn-fb" href="#"> Фейсбук </a>
+                    <a class="social-btn social-btn-utube" href="#"> Ютуб </a>
+                </section>
 
-                    <section class="footer-copyright">
-                        <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">
-                            <img src="http://placehold.it/100x70" alt="HTML Academy"> 
-                        </a>
-                    </section>
-                </div>
+                <section class="footer-copyright">
+                    <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">
+                        <img src="http://placehold.it/100x70" alt="HTML Academy"> 
+                    </a>
+                </section>
             </div>
         </footer>
 	</body>
