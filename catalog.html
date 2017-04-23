@@ -10,7 +10,7 @@
                 <nav class="main-navigation-left">
                     <ul>
                         <li>
-                            <a class="info" href="#"> Инфоомация </a>
+                            <a class="info" href="#"> Информация </a>
                         </li>
                         <li>
                             <a class="photo-video" href="#"> Фото и видео </a>
@@ -36,43 +36,42 @@
         </header>
 
         <main class="container">
-            <div class="filter-1">
-            <fieldset class="filter-1">
-                <legend> Инфраструктура: </legend>
-                <input type="checkbox" name="infractr" id="infractr" checked>
-                <label for="infractr"> Бассейн </label>
+            <div class="filters">
+                <fieldset class="filter-1">
+                    <legend> Инфраструктура: </legend>
+                    <input type="checkbox" name="infractr" id="infractr" checked>
+                    <label for="infractr"> Бассейн </label>
 
-                <input type="checkbox" name="parking" id="parking">
-                <label for="parking"> Парковка </label>
+                    <input type="checkbox" name="parking" id="parking">
+                    <label for="parking"> Парковка </label>
 
-                <input type="checkbox" name="wifi" id="wifi">
-                <label for="wifi"> Wi&ndash;Fi </label>
-            </fieldset>
+                    <input type="checkbox" name="wifi" id="wifi">
+                    <label for="wifi"> Wi&ndash;Fi </label>
+                </fieldset>
+
+                <fieldset class="filter-2">
+                    <legend> Тип жилья: </legend>
+                    <input type="checkbox" name="hotel" id="hotel" checked>
+                    <label for="hotel"> Гостиница </label>
+
+                    <input type="checkbox" name="motel" id="motel" checked>
+                    <label for="motel"> Мотель </label>
+
+                    <input type="checkbox" name="apartments" id="apartments" checked>
+                    <label for="apartments"> Апартаменты </label>
+                </fieldset>
+
+                <section class="day-price">
+                    <span class="day-price"> Стоимость в сутки (Р): </span>
+                    <span class="from"> от 0 </span>
+                    <span class="before"> до 5000 </span>
+                    <input type="range" name="day-price">
+                    <a class="btn" href="#"> Показать </a>
+                </section>
             </div>
 
-            <div class="filter-2">
-            <fieldset class="filter-2">
-                <legend> Тип жилья: </legend>
-                <input type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel"> Гостиница </label>
-
-                <input type="checkbox" name="motel" id="motel" checked>
-                <label for="motel"> Мотель </label>
-
-                <input type="checkbox" name="apartments" id="apartments" checked>
-                <label for="apartments"> Апартаменты </label>
-            </fieldset>
-            </div>
-
-            <div class="day-price">
-                <span class="day-price"> Стоимость в сутки (Р): </span>
-                <span class="from"> от 0 </span>
-                <span class="before"> до 5000 </span>
-                <input type="range" name="day-price">
-                <a class="btn" href="#"> Показать </a>
-            </div>
-
-            <div class="catalog">
+            <div class="search-results">
+                <section class="search-results">
                 <span class="found"> Найдено: 3 </span>
                 <span class="sorting"> Сортировка: </span>
                 <ul>
@@ -88,42 +87,61 @@
                         <a class="range" href="#"> По рейтингу </a>
                     </li>
                 </ul>
+                </section>
+            <section class="btn-sorting">
                 <button> &#9650; </button>
                 <button> &#9660; </button>
+            </section>
             </div>
 
             <article class="amara">
-                <img src="http://placehold.it/150x100" alt="">
-                <span> Amara resort &amp; spa </span>
-                <span> Гостиница </span>
-                <span> от 4000 Р. </span>
-                &#9733; &#9733; &#9733; &#9733;
-                <span> Рейтинг: 8,5 </span>
+                <section>
+                    <p class="amara-pic">
+                        <img src="http://placehold.it/150x100" alt="some">
+                    </p>
+                    <span> Amara resort &amp; spa </span>
+                    <span> Гостиница </span>
+                    <span> от 4000 Р. </span>
+                </section>
+                <section>
+                    <span>&#9733; &#9733; &#9733; &#9733; </span>
+                    <span> Рейтинг: 8,5 </span>
+                </section>
             </article>
 
              <article class="desert">
-                <img src="http://placehold.it/150x100" alt="">
-                <span> Desert quail inn </span>
-                <span> Мотель </span>
-                <span> от 3000 Р. </span>
-                &#9733; &#9733; &#9733;
-                <span> Рейтинг: 8,9 </span>
+                <section>
+                    <p class="desert-pic">
+                        <img src="http://placehold.it/150x100" alt="some">
+                    </p>
+                    <span> Desert quail inn </span>
+                    <span> Мотель </span>
+                    <span> от 3000 Р. </span>
+                </section>
+                <section>
+                    <span> &#9733; &#9733; &#9733; </span>
+                    <span> Рейтинг: 8,9 </span>
+                </section>
             </article>
 
              <article class="villas">
-                <img src="http://placehold.it/150x100" alt="">
-                <span> Villas at poco diablo </span>
-                <span> Апартаменты </span>
-                <span> от 2000 Р. </span>
-                &#9733; &#9733; 
-                <span> Рейтинг: 9,2 </span>
+                <section>
+                    <p class="villas-pic">
+                        <img src="http://placehold.it/150x100" alt="some">
+                    </p>
+                    <span> Villas at poco diablo </span>
+                    <span> Апартаменты </span>
+                    <span> от 2000 Р. </span>
+                </section>
+                <section>
+                    <span> &#9733; &#9733; </span>
+                    <span> Рейтинг: 9,2 </span>
+                </section>
             </article>
         </main>
         <footer class="main-footer">
             <div class="container">
-                <section class="visit-sedona">
-                        #visitsedona
-                    </section>
+                <span class="visit-sedona"> #visitsedona </span>
 
                     <section class="footer-social">
                         <a class="social-btn social-btn-twitter" href="#"> Твиттер </a>
