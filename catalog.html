@@ -2,150 +2,159 @@
 <html lang="ru">
 	<head>
  		<meta charset="utf-8">
+        <link rel="stylesheet" href="css/normalize.css">
         <link href="css/style.css" rel="stylesheet">
  		<title> Седона </title>
  	</head>
 	<body>
 		<header class="main-header">
-    		<div class="container">
-                <nav class="main-navigation-left">
+            <div class="container clearfix"> 
+                <nav class="main-nav-left">
                     <ul>
-                        <li>
-                            <a class="info" href="#"> Информация </a>
+                        <li class="item">
+                            <a class="nav-left" href="#"> Информация </a>
                         </li>
-                        <li>
-                            <a class="photo-video" href="#"> Фото и видео </a>
+                        <li class="item">
+                            <a class="nav-left" href="#"> Фото и видео </a>
                         </li>   
                     </ul>
                 </nav>
                 <div class="index-logo">
-                    <a class="logo" href="index.html">
-                        <img src="img/logo-header.png" width="138" height="70" alt="Седона">
-                    </a>
+                    <img src="img/logo-header.png" width="138" height="70" alt="Седона">
                 </div>
-                <nav class="main-navigation-right">
+                <nav class="main-nav-right">
                     <ul>
-                        <li>
-                            <a class="state-map" href="#"> Карта штата </a>
+                        <li class="item">
+                            <a class="nav-right" href="#"> Карта штата </a>
                         </li>
-                        <li>
-                            Гостиницы
+                        <li class="item">
+                            <a class="nav-right" href="catalog.html"> Гостиницы </a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main class="container">
+        <main>
             <form class="filters">
-                <fieldset class="filter-1">
-                    <legend> Инфраструктура: </legend>
-                    <input type="checkbox" name="infractr" id="infractr" checked>
-                    <label for="infractr"> Бассейн </label>
+                <div class="container clearfix">
+                    <fieldset class="filter-1">
+                        <legend> Инфраструктура: </legend>
+                        <input type="checkbox" name="infractr" id="infractr" checked>
+                        <label for="infractr"> Бассейн </label>
 
-                    <input type="checkbox" name="parking" id="parking">
-                    <label for="parking"> Парковка </label>
+                        <input type="checkbox" name="parking" id="parking">
+                        <label for="parking"> Парковка </label>
 
-                    <input type="checkbox" name="wifi" id="wifi">
-                    <label for="wifi"> Wi&ndash;Fi </label>
-                </fieldset>
+                        <input type="checkbox" name="wifi" id="wifi">
+                        <label for="wifi"> Wi&ndash;Fi </label>
+                    </fieldset>
 
-                <fieldset class="filter-2">
-                    <legend> Тип жилья: </legend>
-                    <input type="checkbox" name="hotel" id="hotel" checked>
-                    <label for="hotel"> Гостиница </label>
+                    <fieldset class="filter-2">
+                        <legend> Тип жилья: </legend>
+                        <input type="checkbox" name="hotel" id="hotel" checked>
+                        <label for="hotel"> Гостиница </label>
 
-                    <input type="checkbox" name="motel" id="motel" checked>
-                    <label for="motel"> Мотель </label>
+                        <input type="checkbox" name="motel" id="motel" checked>
+                        <label for="motel"> Мотель </label>
 
-                    <input type="checkbox" name="apartments" id="apartments" checked>
-                    <label for="apartments"> Апартаменты </label>
-                </fieldset>
+                        <input type="checkbox" name="apartments" id="apartments" checked>
+                        <label for="apartments"> Апартаменты </label>
+                    </fieldset>
 
-                <section class="day-price">
-                    <span class="day-price"> Стоимость в сутки (Р): </span>
-                    <span class="from"> от 0 </span>
-                    <span class="before"> до 5000 </span>
-                    <input type="range" name="day-price">
-                    <input type="submit" name="show" value="Показать"> 
-                </section>
+                    <section class="filter-3">
+                        <span class="name-filt"> Стоимость в сутки (Р): </span>
+                        <span class="from"> от 0 </span>
+                        <span class="before"> до 5000 </span>
+                        <input type="range" name="day-price">
+                        <input type="submit" name="show" value="Показать"> 
+                    </section>
+                </div>
             </form>
 
-            <div class="search-results">
-                <section class="search-results">
-                <span class="found"> Найдено: 3 </span>
-                <span class="sorting"> Сортировка: </span>
-                <ul>
-                    <li> 
-                        <a class="price" href="#"> По цене </a>
-                    </li>
+                <div class="container results clearfix">
+                    <section class="search-results">
+                    <span class="found"> Найдено: 3 </span>
+                    <span class="sorting"> Сортировка: </span>
+                    <ul>
+                        <li> 
+                            <a class="item" href="#"> По цене </a>
+                        </li>
 
-                    <li>
-                        <a class="type" href="#"> По типу </a>
-                    </li>
+                        <li>
+                            <a class="item" href="#"> По типу </a>
+                        </li>
 
-                    <li> 
-                        <a class="range" href="#"> По рейтингу </a>
-                    </li>
-                </ul>
+                        <li> 
+                            <a class="item" href="#"> По рейтингу </a>
+                        </li>
+                    </ul>
+                    </section>
+                <section class="btn-sorting">
+                    <button> &#9650; </button>
+                    <button> &#9660; </button>
                 </section>
-            <section class="btn-sorting">
-                <button> &#9650; </button>
-                <button> &#9660; </button>
-            </section>
+                </div>
             </div>
 
-            <article class="amara">
-                <section>
-                    <p class="amara-pic">
-                        <img src="img/amara.jpg" width="135" height="90" alt="Amara resort and spa">
-                    </p>
-                    <h2 class="subtitle"> Amara resort &amp; spa </h2>
-                    <span> Гостиница </span>
-                    <span> от 4000 Р. </span>
-                    <a class="btn" href="#"> Подробнее </a>
-                    <a class="btn" href="#"> Забронировать </a>
-                </section>
-                <section>
-                    <span>&#9733; &#9733; &#9733; &#9733; </span>
-                    <span> Рейтинг: 8,5 </span>
-                </section>
-            </article>
+            <div class="container">
+                <article class="catalog-item clearfix">
+                    <section class="left">
+                        <p class="item-pic">
+                            <img src="img/amara.jpg" width="135" height="90" alt="Amara resort and spa">
+                        </p>
+                        <h2 class="subtitle"> Amara resort &amp; spa </h2>
+                        <span class="phrase"> Гостиница </span>
+                        <span class="phrase"> от 4000 Р. </span>
+                        <a class="btn" href="#"> Подробнее </a>
+                        <a class="btn" href="#"> Забронировать </a>
+                    </section>
+                    <section class="right">
+                        <span class="phrase">&#9733; &#9733; &#9733; &#9733; </span>
+                        <span class="phrase"> Рейтинг: 8,5 </span>
+                    </section>
+                </article>
+            </div>
 
-             <article class="desert">
-                <section>
-                    <p class="desert-pic">
-                        <img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">
-                    </p>
-                    <h2 class="subtitle"> Desert quail inn </h2>
-                    <span> Мотель </span>
-                    <span> от 3000 Р. </span>
-                    <a class="btn" href="#"> Подробнее </a>
-                    <a class="btn" href="#"> Забронировать </a>
-                </section>
-                <section>
-                    <span> &#9733; &#9733; &#9733; </span>
-                    <span> Рейтинг: 8,9 </span>
-                </section>
-            </article>
+            <div class="container">
+                <article class="catalog-item clearfix">
+                    <section class="left">
+                        <p class="item-pic">
+                            <img src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">
+                        </p>
+                        <h2 class="subtitle"> Desert quail inn </h2>
+                        <span class="phrase"> Мотель </span>
+                        <span class="phrase"> от 3000 Р. </span>
+                        <a class="btn" href="#"> Подробнее </a>
+                        <a class="btn" href="#"> Забронировать </a>
+                    </section>
+                    <section class="right">
+                        <span class="phrase"> &#9733; &#9733; &#9733; </span>
+                        <span class="phrase"> Рейтинг: 8,9 </span>
+                    </section>
+                </article>
+            </div>
 
-             <article class="villas">
-                <section>
-                    <p class="villas-pic">
-                        <img src="img/villas.jpg" width="135" height="90" alt="Villas poco diablo">
-                    </p>
-                    <h2 class="subtitle"> Villas at poco diablo </h2>
-                    <span> Апартаменты </span>
-                    <span> от 2000 Р. </span>
-                    <a class="btn" href="#"> Подробнее </a>
-                    <a class="btn" href="#"> Забронировать </a>
-                </section>
-                <section>
-                    <span> &#9733; &#9733; </span>
-                    <span> Рейтинг: 9,2 </span>
-                </section>
-            </article>
+            <div class="container">
+                <article class="catalog-item clearfix">
+                    <section class="left">
+                        <p class="item-pic">
+                            <img src="img/villas.jpg" width="135" height="90" alt="Villas poco diablo">
+                        </p>
+                        <h2 class="subtitle"> Villas at poco diablo </h2>
+                        <span class="phrase"> Апартаменты </span>
+                        <span class="phrase"> от 2000 Р. </span>
+                        <a class="btn" href="#"> Подробнее </a>
+                        <a class="btn" href="#"> Забронировать </a>
+                    </section>
+                    <section class="right">
+                        <span class="phrase"> &#9733; &#9733; </span>
+                        <span class="phrase"> Рейтинг: 9,2 </span>
+                    </section>
+                </article>
+            </div>
         </main>
+
         <footer class="main-footer">
             <div class="container">
                 <span class="visit-sedona"> #visitsedona </span>
