@@ -1,156 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
+	<head>
+ 		<meta charset="utf-8">
         <link href="css/style.css" rel="stylesheet">
-        <title> Седона </title>
-    </head>
-    <body>
-        <header class="main-header">
-            <div class="container"> 
-                <nav class="main-navigation-left">
+ 		<title> Седона </title>
+ 	</head>
+	<body>
+		<header class="main-header">
+    		<div class="container clearfix"> 
+                <nav class="main-nav-left">
                     <ul>
                         <li>
-                        <a class="info" href="#"> Информация </a>
+                            <a class="nav-left" href="#"> Информация </a>
                         </li>
                         <li>
-                            <a class="photo-video" href="#"> Фото и видео </a>
+                            <a class="nav-left" href="#"> Фото и видео </a>
                         </li>   
                     </ul>
                 </nav>
                 <div class="index-logo">
                     <img src="img/logo-header.png" width="138" height="70" alt="Седона">
                 </div>
-                <nav class="main-navigation-right">
+                <nav class="main-nav-right">
                     <ul>
                         <li>
-                            <a class="state-map" href="#"> Карта штата </a>
+                            <a class="nav-right" href="#"> Карта штата </a>
                         </li>
                         <li>
-                            <a class="hotels" href="catalog.html"> Гостиницы </a>
+                            <a class="nav-right" href="catalog.html"> Гостиницы </a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <div class="welc-to-sedona">
-            <img src="img/banner-text.png" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
-        </div>
+        <section class="banner">
+            <div class="container sedona-text">
+                <img src="img/banner-text.png" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+            </div>
+        </section>
 
-        <main class="container">
-            <section class="description">
-                <h1 class="title">
-                    Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!
-                </h1>
-                <p class="better-than-canyon"> 
-                    Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон! 
-                </p>
-            </section>
-            
-            <div class="reasons">
-                <div class="towm">
-                    <div>
-                        <h2 class="subtitle"> Настоящий городок </h2>
-                        <span> &ndash; &#8470;1 &ndash; </span>
-                        <span> Седона &ndash; не аттракцион для туристов, там течет своя жизнь </span>
-                        <img src="img/index-photo1.jpg" width="800" height="256" alt="some">
-                    </div>
+        <main>
+            <div class="caption">
+                <div class="container">
+                    <h1 class="title">
+                        Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!
+                    </h1>
+                    <p> 
+                        Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон! 
+                    </p>
                 </div>
+            </div>
+            
+            
+            <div class="container row-1">
+                <section class="column">
+                    <h2 class="subtitle"> Настоящий городок </h2>
+                    <p> &ndash; &#8470;1 &ndash; </p>
+                    <span> Седона &ndash; не аттракцион для туристов, там течет своя жизнь </span>
+                </section>
+                <section class="column">
+                    <img src="img/index-photo1.jpg" width="800" height="256" alt="some">
+                </section>
+            </div>
 
-                <div class="house food goods">
-                    <div class="house">
+            <div class="examples">
+                <div class="container row-2">
+                    <div class="column">
                         <h2 class="subtitle"> Жилье </h2>
                         <span> Рекомендуем пожить в настоящем мотеле, все как в кино! </span>
                     </div>
-                    
-                    <div class="food">
+                        
+                    <div class="column">
                         <h2 class="subtitle"> Еда </h2>
                         <span> Всегда заказывайте фирменный бургер, вы не разочаруетесь! </span>
                     </div>
-                    
-                    <div class="goods">
+                        
+                    <div class="column">
                         <h2 class="subtitle"> Сувениры </h2>
                         <span> Не только китайского, но и местного производства!</span>
                     </div>
                 </div>
+            </div>
+               
 
-                <div class="devil-bridge">
-                    <div class="bridge-pic">
-                        <img src="img/index-photo2.jpg" width="800" height="256" alt="some">
-                        <h2 class="subtitle"> Там есть мост дьявола </h2>
-                        <span> &ndash; &#8470;2 &ndash; </span>
-                        <span> Да, но по нему можно пройти! Если конечно вы осмелитесь </span>
-                    </div>
-                </div>
+            <div class="container row-3">
+                <section class="column">
+                    <img src="img/index-photo2.jpg" width="800" height="256" alt="some">
+                </section>
+                <section class="column">
+                    <h2 class="subtitle"> Там есть мост дьявола </h2>
+                    <p> &ndash; &#8470;2 &ndash; </p>
+                    <span> Да, но по нему можно пройти! Если конечно вы осмелитесь </span>
+                </section>
+            </div>
 
-                <div class="size way no-tourists">
-                <section class="size">
+            <div class="container row-4">
+                <section class="column">
                     <h2 class="subtitle"> Небольшая площадь </h2>
-                    <span> &ndash; &#8470;3 &ndash; </span>
+                    <p> &ndash; &#8470;3 &ndash; </p>
                     <span> Все достопримечательности находятся очень близко </span> 
                 </section>
 
-                <section class="way">
+                <section class="column">
                     <h2 class="subtitle"> Красивая дорога </h2>
-                    <span> &ndash; &#8470;4 &ndash; </span>
+                    <p> &ndash; &#8470;4 &ndash; </p>
                     <span> Ехать в Седону из Лас&ndash;Вегаса совсем не скучно! </span>    
                 </section>
 
-                <section class="no-tourists">
+                <section class="column">
                     <h2 class="subtitle"> Мало туристов </h2>
-                    <span> &ndash; &#8470;5 &ndash; </span>
+                    <p> &ndash; &#8470;5 &ndash; </p>
                     <span> Большинство едет в гранд каньон и толпится там </span>    
                 </section>
-                </div>
-            </div>
-
-            <div class="search">
-                <p>
-                    Заинтересовались?
-                </p>
-                <p>
-                    Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-                </p>
-            </div>    
-            <div class="hotel-search">
-                <a class="btn" href="#"> Поиск гостиницы в Седоне </a>
             </div>
             
 
-                <div class="form">    
+            <div class="search">
+                <div class="container">
+                    <h3 class="subsubtitle"> Заинтересовались? </h3>
+                    <p>
+                        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+                    </p>
+                </div>  
+            </div>
+                
+            <div class="container search-hotel title">
+                <a class="btn" href="#"> Поиск гостиницы в Седоне </a>
+            </div>
+            
+            <div class="container">
+                <div class="form map">    
                     <form method="get">
-                    <fieldset class="arrival-date">    
-                        <label for="arrival-date"> Дата заезда: </label>
-                        <input type="text" name="arrival-date" id="arrival-date" value="27 апреля 2017">
-                        <button class="arrive-calendar">
-                            <img src="http://placehold.it/50x50" alt="some"> 
-                        </button>
-                    </fieldset>
+                        <fieldset class="field">    
+                            <label for="arrival-date"> Дата заезда: </label>
+                            <input type="text" name="arrival-date" id="arrival-date" value="27 апреля 2017">
+                            <button class="arrive-calendar">
+                                <img src="http://placehold.it/50x50" alt="some"> 
+                            </button>
+                        </fieldset>
 
-                    <fieldset class="departure-date">
-                        <label for="departure-date"> Дата выезда: </label>
-                        <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
-                        <button class="departure-calendar">
-                            <img src="http://placehold.it/50x50" alt="some"> 
-                        </button>
-                    </fieldset>
+                        <fieldset class="field">
+                            <label for="departure-date"> Дата выезда: </label>
+                            <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
+                            <button class="departure-calendar">
+                                <img src="http://placehold.it/50x50" alt="some"> 
+                            </button>
+                        </fieldset>
 
-                    <fieldset class="adult">
-                        <label for="adult"> Взрослые: </label>
-                        <button class="minus"> - </button>
-                        <input type="text" name="adult" id="adult" value="2">
-                        <button class="plus"> + </button>
-                    </fieldset>
+                        <fieldset class="quantity">
+                            <label for="adult"> Взрослые: </label>
+                            <button class="minus"> - </button>
+                            <input type="text" name="adult" id="adult" value="2">
+                            <button class="plus"> + </button>
+                        </fieldset>
 
-                    <fieldset class="children">
-                        <label for="children"> Дети: </label>
-                        <button class="minus"> - </button>
-                        <input type="text" name="children" id="children" value="0">
-                        <button class="plus"> + </button>
-                    </fieldset>
+                        <fieldset class="quantity">
+                            <label for="children"> Дети: </label>
+                            <button class="minus"> - </button>
+                            <input type="text" name="children" id="children" value="0">
+                            <button class="plus" type="button"> + </button>
+                        </fieldset>
 
-                        <a class="btn" href="#"> Найти </a>
+                        <button type="submit"> Найти </button>
                     </form>
                 </div>
 
@@ -158,9 +170,10 @@
                     <img src="img/map.png" width="1200" height="593" alt="Карта">
                 </div>
 
+            </div>
         </main>
 
-        <footer class="main-footer">
+        <footer class="main-footer clearfix">
             <div class="container">
                 <span class="visit-sedona"> #visitsedona </span>
 
@@ -177,5 +190,5 @@
                 </section>
             </div>
         </footer>
-    </body>
+	</body>
 </html>
