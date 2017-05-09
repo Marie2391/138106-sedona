@@ -1,6 +1,10 @@
+*,*::after,*::before {box-sizing: inherit}
+html {
+	box-sizing: border-box;
+}
 body {
 	font-family: "PT Sans", "Tahoma", sans-serif;
-	width: 1284px;
+	width: 1200px;
 	margin-left: 42px;
 	margin-right: 42px;
 	text-transform: uppercase;
@@ -38,12 +42,12 @@ body {
 }
 
 .main-nav-left, .index-logo {
-	display: inline-block;
 	float: left;
 }
 
 .main-nav-left {
 	width: 480px;
+
 }
 
 .index-logo {
@@ -51,12 +55,11 @@ body {
 }
 
 .main-nav-right {
-	display: inline-block;
 	float: right;
 	width: 480px;
 }
 
-.clearfix {
+.clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
@@ -66,6 +69,9 @@ body {
 	width: 1200px;
 	height: 800px;
 	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	padding-top: 76px;
+	text-align: center;
 }
 
 .caption {
@@ -184,12 +190,15 @@ body {
 	margin-right: auto;
 	font-weight: bold;
 	color: #ffffff;
+	position: relative;
+
 }
 
 .form {
 	width: 576px;
 	margin-left: auto;
 	margin-right: auto;
+	position: absolute;
 }
 
 .main-footer {
@@ -216,3 +225,4 @@ body {
 	width: 400px;
 	background-color: grey;
 }
+
