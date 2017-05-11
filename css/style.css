@@ -14,8 +14,9 @@ body {
 .title {
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: normal;
+	font-weight: bold;
 	color: #000000;
+	margin-top: 0;
 
 }
 
@@ -23,6 +24,7 @@ body {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
+	color: #000000;
 }
 
 .subsubtitle {
@@ -31,24 +33,31 @@ body {
 	font-weight: normal;
 	color: #000000;
 	margin-top: 0;
+	padding-top: 50px;
 }
 
 .main-header {
-	background-color: pink;
 	height: 56px;
-	text-align: center;
 }
 
 .comtainer {
 	width: 1180px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0;
 }
+
 
 .item {
 	display: inline-block;
 	vertical-align: top;
-	}
+	width: 164px;
+	font-size: 14px;
+	line-height: 26 px;
+	font-weight: bold;
+	color: #000000;
+}
+
+
 
 .main-nav-left, .index-logo {
 	float: left;
@@ -57,21 +66,30 @@ body {
 
 
 .main-nav-left {
-	width: 480px;
+	width: 531px;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
 	color:  #000000;
-
 }
 
 .main-nav-right {
 	float: right;
-	width: 480px;
+	width: 531px;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
 	color:  #000000;
+}
+
+.main-nav-left .item:nth-child(1) {
+	margin-left: 30px;
+	margin-right: 75px;
+}
+
+.main-nav-right .item:nth-child(1) {
+	margin-left: 86px;
+	margin-right: 70px;
 }
 
 .item a:link {
@@ -112,8 +130,9 @@ body {
 	min-height: 154px;
 	background-color: yellow;
 	text-align: center;
-	padding-top: 63px;
+	padding-top: 0;
 }
+
 
 .caption .paragraph {
 	font-size: 14px;
@@ -136,7 +155,7 @@ body {
 	float: left;
 	text-align: center;
 	color: #ffffff;
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-right: 47px;
 	padding-left: 47px;
 	padding-bottom: 6px;
@@ -145,6 +164,12 @@ body {
 .row-1 .column:nth-child(2) {
 	float: right;
 	height: 256px;
+
+}
+
+.row-1 .subtitle,
+.row-3 .subtitle {
+	color: #ffffff;
 }
 
 .row-1 .paragraph,
@@ -156,6 +181,7 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: normal;
+	padding-top: 5px;
 }
 
 .
@@ -163,23 +189,48 @@ body {
 .row-1 .paragraph,
 .row-1 .phrase {
 	color: #ffffff;
+	
 }
 
-.row-4 .column p,
-.row-4 .column span {
+.row-4 .paragraph,
+.row-4 .phrase {
 	color: #333333;
 }
 
 .row-2 {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-around;
 	height: 330px;
-	background-color: pink; 
-
+	text-align: center;
 }
 
+.row-2 .column:nth-child(1),
+.row-2 .column:nth-child(2),
+.row-2 .column:nth-child(3) {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #333333;
+	min-height: 185px;
+	padding-top: 145px;
+	background-repeat: no-repeat;
+	background-position: 50% 60px;
+}
 
+.row-2 .column:nth-child(1) {
+	flex-basis: 280px;
+	background-image: url("../img/icon-house.png");
+}
+
+.row-2 .column:nth-child(2) {
+	flex-basis: 300px;
+	background-image: url("../img/icon-food.png");
+}
+
+.row-2 .column:nth-child(3) {
+	flex-basis: 286px;
+	background-image: url("../img/icon-gift.png");
+}
 
 .row-3 .column:nth-child(1) {
 	float: left;
@@ -193,7 +244,7 @@ body {
 	float: left;
 	text-align: center;
 	color: #ffffff;
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-right: 47px;
 	padding-left: 47px;
 	padding-bottom: 6px;
@@ -201,18 +252,29 @@ body {
 
 .row-4 {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 330px;
+	justify-content: space-around;
+	padding-top: 30px;
+	height: 256px;
 	background-color: #eeeeee;
 	clear: both;
 	text-align: center;
 }
 
+.row-4 .column:nth-child(1) {
+	flex-basis: 314px;
+}
+
+.row-4 .column:nth-child(2) {
+	flex-basis: 307px;
+}
+
+.row-4 .column:nth-child(3) {
+	flex-basis: 304px;
+}
+
 .search {
-	background-color: pink;
 	text-align: center;
-	height: 150px;
+	height: 206px;
 }
 
 .search .paragraph {
