@@ -124,6 +124,7 @@ body {
 	background-repeat: no-repeat;
 	padding-top: 76px;
 	text-align: center;
+	background-position: 0 -83px;
 }
 
 .caption {
@@ -309,7 +310,9 @@ body {
 .filters {
 	background-color: #7798bb;
 	background-image: url("../img/catalog-background.jpg");
+	background-repeat: no-repeat;
 	height: 218px;
+	background-position: -500px -800px;
 }
 
 .results {
@@ -423,14 +426,14 @@ body {
 
 .center .btn:first-of-type {
      background-color: #81b3d2;
-     height: 27px;
-     width: 110px;
+     min-height: 27px;
+     min-width: 110px;
 }
 
 .center .btn:last-child {
 	background-color: #766357;
-	height: 27px;
-	width: 142px;
+	min-height: 27px;
+	min-width: 142px;
 }
 
 .main-footer {
